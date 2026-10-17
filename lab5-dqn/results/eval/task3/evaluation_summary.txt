@@ -1,0 +1,6 @@
+task3_600000.pt: Average Reward = 10.8
+task3_1000000.pt: Average Reward = 18.1
+task3_1500000.pt: Average Reward = 18.95
+task3_2000000.pt: Average Reward = 19.45
+task3_2500000.pt: Average Reward = 19.95
+task3_best.pt: Average Reward = 19.95

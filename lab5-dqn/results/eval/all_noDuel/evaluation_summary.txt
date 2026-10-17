@@ -1,0 +1,5 @@
+model_step602656.pt: Average Reward = 14.95
+model_step1004527.pt: Average Reward = 16.55
+model_step1502240.pt: Average Reward = 17.05
+model_step2001746.pt: Average Reward = 18.35
+model_step2502226.pt: Average Reward = 19.1
