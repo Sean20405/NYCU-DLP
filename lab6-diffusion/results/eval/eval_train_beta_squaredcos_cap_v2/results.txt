@@ -1,0 +1,9 @@
+Experiment Configuration:
+  CFG Weight: 3.0
+  Steps: 50
+  Scheduler: ddim
+  Beta Schedule: squaredcos_cap_v2
+------------------------------
+Test Accuracy: 0.7917 (Time: 3.87s)
+New Test Accuracy: 0.8333 (Time: 3.50s)
+Total Inference Time: 7.38s

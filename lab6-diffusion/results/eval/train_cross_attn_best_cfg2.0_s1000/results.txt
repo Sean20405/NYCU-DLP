@@ -1,0 +1,9 @@
+Experiment Configuration:
+  CFG Weight: 2.0
+  Steps: 1000
+  Scheduler: ddpm
+  Beta Schedule: scaled_linear
+------------------------------
+Test Accuracy: 0.7500 (Time: 59.90s)
+New Test Accuracy: 0.8929 (Time: 60.01s)
+Total Inference Time: 119.91s

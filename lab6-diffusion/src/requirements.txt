@@ -1,0 +1,7 @@
+torch+cu126
+torchvision+cu126
+numpy
+pillow
+diffusers
+matplotlib
+wandb
