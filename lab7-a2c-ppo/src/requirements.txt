@@ -1,0 +1,6 @@
+gymnasium==1.1.1
+torch==2.11.0
+wandb==0.26.1
+mujoco==3.8.0
+gymnasium[classic-control]
+imageio==2.37.3
