@@ -1,0 +1,17 @@
+timestamp,run_tag,exp_name,tfr,tfr_sde,tfr_d_step,scheduled_sampling,best_psnr,status,log_file
+2026-04-20 13:05:04,tf_sweep_20260420_114549,tf_epoch_tfr1p0_sde20_d0p05,1.0,20,0.05,false,36.57991027832031,ok,logs/tf_sweep_20260420_114549/tf_epoch_tfr1p0_sde20_d0p05.log
+2026-04-20 13:24:16,tf_sweep_20260420_114549,tf_epoch_tfr1p0_sde25_d0p10,1.0,25,0.10,false,NA,failed(1),logs/tf_sweep_20260420_114549/tf_epoch_tfr1p0_sde25_d0p10.log
+2026-04-20 14:42:44,tf_sweep_20260420_114549,tf_epoch_tfr1p0_sde30_d0p05,1.0,30,0.05,false,32.50143814086914,ok,logs/tf_sweep_20260420_114549/tf_epoch_tfr1p0_sde30_d0p05.log
+2026-04-20 16:00:41,tf_sweep_20260420_114549,tf_epoch_tfr0p7_sde20_d0p05,0.7,20,0.05,false,36.9349250793457,ok,logs/tf_sweep_20260420_114549/tf_epoch_tfr0p7_sde20_d0p05.log
+2026-04-20 17:18:17,tf_sweep_20260420_114549,tf_epoch_tfr0p7_sde25_d0p10,0.7,25,0.10,false,37.16411590576172,ok,logs/tf_sweep_20260420_114549/tf_epoch_tfr0p7_sde25_d0p10.log
+2026-04-20 18:36:12,tf_sweep_20260420_114549,tf_frame_tfr1p0_sde20_d0p05,1.0,20,0.05,true,31.86217498779297,ok,logs/tf_sweep_20260420_114549/tf_frame_tfr1p0_sde20_d0p05.log
+2026-04-20 20:01:40,tf_sweep_20260420_114549,tf_frame_tfr1p0_sde25_d0p10,1.0,25,0.10,true,31.42578125,ok,logs/tf_sweep_20260420_114549/tf_frame_tfr1p0_sde25_d0p10.log
+2026-04-20 21:19:43,tf_sweep_20260420_114549,tf_frame_tfr0p7_sde30_d0p05,0.7,30,0.05,true,30.84169578552246,ok,logs/tf_sweep_20260420_114549/tf_frame_tfr0p7_sde30_d0p05.log
+2026-04-21 18:42:40,tf_sde_dstep_tfr0p7_20260421,tf_epoch_tfr0p7_sde10_d0p05,0.7,10,0.05,false,37.56153869628906,ok,logs/tf_sde_dstep_tfr0p7_20260421/tf_epoch_tfr0p7_sde10_d0p05.log
+2026-04-21 18:52:43,tf_sde_dstep_tfr0p7_20260421,tf_epoch_tfr0p7_sde10_d0p10,0.7,10,0.10,false,NA,failed(1),logs/tf_sde_dstep_tfr0p7_20260421/tf_epoch_tfr0p7_sde10_d0p10.log
+2026-04-21 20:12:57,tf_sde_dstep_tfr0p7_20260421,tf_epoch_tfr0p7_sde15_d0p05,0.7,15,0.05,false,36.536582946777344,ok,logs/tf_sde_dstep_tfr0p7_20260421/tf_epoch_tfr0p7_sde15_d0p05.log
+2026-04-21 20:21:40,tf_sde_dstep_tfr0p7_20260421,tf_epoch_tfr0p7_sde15_d0p10,0.7,15,0.10,false,NA,failed(1),logs/tf_sde_dstep_tfr0p7_20260421/tf_epoch_tfr0p7_sde15_d0p10.log
+2026-04-21 21:41:49,tf_sde_dstep_tfr0p7_20260421,tf_epoch_tfr0p7_sde20_d0p10,0.7,20,0.10,false,36.15892791748047,ok,logs/tf_sde_dstep_tfr0p7_20260421/tf_epoch_tfr0p7_sde20_d0p10.log
+2026-04-21 23:01:36,tf_sde_dstep_tfr0p7_20260421,tf_epoch_tfr0p7_sde25_d0p05,0.7,25,0.05,false,31.862030029296875,ok,logs/tf_sde_dstep_tfr0p7_20260421/tf_epoch_tfr0p7_sde25_d0p05.log
+2026-04-22 00:21:47,tf_sde_dstep_tfr0p7_20260421,tf_epoch_tfr0p7_sde30_d0p05,0.7,30,0.05,false,35.51966094970703,ok,logs/tf_sde_dstep_tfr0p7_20260421/tf_epoch_tfr0p7_sde30_d0p05.log
+2026-04-22 01:41:59,tf_sde_dstep_tfr0p7_20260421,tf_epoch_tfr0p7_sde30_d0p10,0.7,30,0.10,false,36.290157318115234,ok,logs/tf_sde_dstep_tfr0p7_20260421/tf_epoch_tfr0p7_sde30_d0p10.log

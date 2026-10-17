@@ -1,0 +1,17 @@
+timestamp,run_tag,exp_name,lr,kl_anneal_type,kl_anneal_cycle,kl_anneal_ratio,kl_beta_min,tfr,tfr_sde,tfr_d_step,scheduled_sampling,best_psnr,status,log_file
+2026-04-22 18:48:00,kl_sweep_20260422_173414,kl_cyc_lr5em4_c2_r0p5,5e-4,cyc,2,0.5,1e-2,0.7,20,0.05,0,35.87903594970703,ok,logs/kl_sweep_20260422_173414/kl_cyc_lr5em4_c2_r0p5.log
+2026-04-22 20:06:44,kl_sweep_20260422_173414,kl_cyc_lr5em4_c2_r0p75,5e-4,cyc,2,0.75,1e-2,0.7,20,0.05,0,36.22402572631836,ok,logs/kl_sweep_20260422_173414/kl_cyc_lr5em4_c2_r0p75.log
+2026-04-22 21:33:04,kl_sweep_20260422_173414,kl_cyc_lr5em4_c5_r0p5,5e-4,cyc,5,0.5,1e-2,0.7,20,0.05,0,34.90787124633789,ok,logs/kl_sweep_20260422_173414/kl_cyc_lr5em4_c5_r0p5.log
+2026-04-22 22:59:08,kl_sweep_20260422_173414,kl_cyc_lr5em4_c5_r0p75,5e-4,cyc,5,0.75,1e-2,0.7,20,0.05,0,35.23333740234375,ok,logs/kl_sweep_20260422_173414/kl_cyc_lr5em4_c5_r0p75.log
+2026-04-23 00:26:37,kl_sweep_20260422_173414,kl_cyc_lr5em4_c7_r0p5,5e-4,cyc,7,0.5,1e-2,0.7,20,0.05,0,34.36869430541992,ok,logs/kl_sweep_20260422_173414/kl_cyc_lr5em4_c7_r0p5.log
+2026-04-23 01:36:25,kl_sweep_20260422_173414,kl_cyc_lr5em4_c7_r0p75,5e-4,cyc,7,0.75,1e-2,0.7,20,0.05,0,33.22911834716797,ok,logs/kl_sweep_20260422_173414/kl_cyc_lr5em4_c7_r0p75.log
+2026-04-23 02:50:56,kl_sweep_20260422_173414,kl_cyc_lr5em4_c10_r0p5,5e-4,cyc,10,0.5,1e-2,0.7,20,0.05,0,36.07678985595703,ok,logs/kl_sweep_20260422_173414/kl_cyc_lr5em4_c10_r0p5.log
+2026-04-23 04:08:10,kl_sweep_20260422_173414,kl_cyc_lr5em4_c10_r0p75,5e-4,cyc,10,0.75,1e-2,0.7,20,0.05,0,35.77939224243164,ok,logs/kl_sweep_20260422_173414/kl_cyc_lr5em4_c10_r0p75.log
+2026-04-23 05:36:54,kl_sweep_20260422_173414,kl_mono_lr8em4_r0p5,8e-4,mono,1,0.5,1e-2,0.7,20,0.05,0,37.070621490478516,ok,logs/kl_sweep_20260422_173414/kl_mono_lr8em4_r0p5.log
+2026-04-23 07:16:47,kl_sweep_20260422_173414,kl_mono_lr8em4_r0p75,8e-4,mono,1,0.75,1e-2,0.7,20,0.05,0,36.97004699707031,ok,logs/kl_sweep_20260422_173414/kl_mono_lr8em4_r0p75.log
+2026-04-23 08:36:27,kl_sweep_20260422_173414,kl_cyc_lr8em4_c2_r0p5,8e-4,cyc,2,0.5,1e-2,0.7,20,0.05,0,36.021663665771484,ok,logs/kl_sweep_20260422_173414/kl_cyc_lr8em4_c2_r0p5.log
+2026-04-23 10:10:34,kl_sweep_20260422_173414,kl_cyc_lr8em4_c2_r0p75,8e-4,cyc,2,0.75,1e-2,0.7,20,0.05,0,36.149688720703125,ok,logs/kl_sweep_20260422_173414/kl_cyc_lr8em4_c2_r0p75.log
+2026-04-23 10:27:29,kl_sweep_20260422_173414,kl_cyc_lr8em4_c5_r0p5,8e-4,cyc,5,0.5,1e-2,0.7,20,0.05,0,NA,failed(1),logs/kl_sweep_20260422_173414/kl_cyc_lr8em4_c5_r0p5.log
+2026-04-23 11:37:54,kl_sweep_20260422_173414,kl_cyc_lr8em4_c5_r0p75,8e-4,cyc,5,0.75,1e-2,0.7,20,0.05,0,35.56919860839844,ok,logs/kl_sweep_20260422_173414/kl_cyc_lr8em4_c5_r0p75.log
+2026-04-23 11:48:14,kl_sweep_20260422_173414,kl_cyc_lr8em4_c7_r0p5,8e-4,cyc,7,0.5,1e-2,0.7,20,0.05,0,NA,failed(1),logs/kl_sweep_20260422_173414/kl_cyc_lr8em4_c7_r0p5.log
+2026-04-23 12:58:42,kl_sweep_20260422_173414,kl_cyc_lr8em4_c7_r0p75,8e-4,cyc,7,0.75,1e-2,0.7,20,0.05,0,28.204431533813477,ok,logs/kl_sweep_20260422_173414/kl_cyc_lr8em4_c7_r0p75.log
