@@ -1,0 +1,27 @@
+__pycache__/
+*.pyc
+
+# Weights, data, and experiment output
+*.pt
+*.pth
+*.ckpt
+*.zip
+wandb/
+runs/
+ckpt/
+checkpoints/
+dataset/*/images/
+data/
+iclevr/
+
+# LaTeX build files
+report_aux/
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.xdv
+
+.vscode/
