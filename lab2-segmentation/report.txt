@@ -1,0 +1,48 @@
+Implementation Highlights
+
+- Data augmentation.
+- Hybrid loss, Cosine Annealing with Warm Restarts. 
+- Multi-scale test time augmentation, tile prediction, foreground thresholding.
+
+Data Preprocessing Strategy
+
+- Utilizes Albumentations for RandomResizedCrop, ShiftScaleRotate,
+ColorJitter, GaussNoise/Blur, and CoarseDropout to improve generalization.
+(UNet do not use RandomResizedCrop)
+
+Training Strategy
+
+- Hybrid loss of 0.3 * WeightedCE + 0.7 * DiceLoss. CE weights
+(3.0, 6.0, 1.0) prioritize foreground, background, and thin border regions.
+- AdamW optimizer with a 5-epoch linear warmup followed by Cosine
+Annealing with Warm Restarts. Train for 315 epochs.
+
+Inference Strategy
+
+- Test Time Augmentation across multiple scales and horizontal flipping.
+- Tile prediction to handle arbitrary resolutions (only for UNet).
+- Add foreground thresholding.
+
+Key Observations
+
+- Multi-scale TTA significantly boosts Dice scores.
+- Due to valid convolutions (no padding) in the original UNet architecture,
+the output mask is smaller than the input (388x388 from 572x572).
+Therefore, training uses center-cropped ground truth, while evaluation/inference
+employs reflection padding and tiling to recover the full-sized prediction for
+arbitrary resolutions. (evaluation don't use tile prediction for fast inference)
+- Since the output mask size of UNet differs from the input, it requires additional
+processing via tile prediction, which generally leads to lower performance compared
+to ResNet34-UNet.
+
+Comparison: UNet vs. ResNet34-UNet
+
+- UNet: Classic baseline using center-cropping and simpler double-convolution blocks;
+reliable but less adaptive to fine textures.
+- ResNet34-UNet: Features a deep encoder and attention-guided decoding; supports
+full-resolution output and delivers superior convergence speed and accuracy.
+
+DISCLOSURE FOR AI TOOLS
+
+I used Copilot to help me write the code and report. However, I've checked and
+modified them to ensure the correctness and quality.

@@ -1,6 +1,6 @@
 # Lab 2: Binary Semantic Segmentation
 
-Foreground and background segmentation on the Oxford-IIIT Pet dataset. I trained two models, a UNet and a ResNet34-UNet. The metric is the Dice score from the Kaggle leaderboard.
+Foreground and background segmentation on the Oxford-IIIT Pet dataset with a UNet and a ResNet34-UNet. I built both models myself from PyTorch layers, with no ready-made model class such as `torchvision.models` and no pretrained weights. The metric is the Dice score from the Kaggle leaderboard.
 
 ## Setup
 
