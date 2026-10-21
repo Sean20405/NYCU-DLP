@@ -1,4 +1,4 @@
-# NYCU Deep Learning Labs (2026 Spring)
+# NYCU Deep Learning & Deep Learning Labs (DLP)
 
 My code, results, and reports for the labs of the Deep Learning course at National Yang Ming Chiao Tung University (NYCU), Spring 2026.
 
@@ -18,14 +18,6 @@ Each lab folder has the same layout.
 - `src/` holds the submitted code.
 - `results/` holds plots, tables, and sample outputs.
 - `report/` holds the report as PDF and LaTeX source.
-
-## What is not in this repository
-
-- Model weights, datasets, and experiment logs. You must train the models again or get the data from the course.
-- Course files, such as lab specifications, slides, and the course evaluator for Lab6.
-- Lab0, which is a PyTorch warm-up, and the group final project.
-
-Some code is based on the starter code from the course. The lab READMEs name the files that you must add yourself.
 
 ## Academic integrity
 

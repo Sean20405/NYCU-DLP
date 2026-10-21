@@ -38,4 +38,18 @@ The best configuration uses cross-attention, CFG weight 3.0, the scaled-linear b
 - DDIM with 10 steps takes about 2.5 s. It is much faster, but it is less accurate than DDPM with 1000 steps.
 - A high CFG weight with few sampling steps hurts accuracy. For example, CFG 8.0 with 50 DDIM steps reached 0.33.
 
-`results/eval_summary.md` lists every evaluation run. The test sets have only 32 images each and the sampling is random, so single runs differ by several points. Some runs score higher than the numbers above. The report uses the runs in the table above. `results/result.png` and `results/result_process.png` show generated images and the denoising process. The full analysis is in [report/report.pdf](report/report.pdf).
+`results/eval_summary.md` lists every evaluation run. The test sets have only 32 images each and the sampling is random, so single runs differ by several points. Some runs score higher than the numbers above. The report uses the runs in the table above. `results/result.png` and `results/result_process.png` show generated images and the denoising process. ## Visualization
+
+Generated images for the 32 labels in `test.json`.
+
+![Generated images](report/assets/result-test_grid.png)
+
+The effect of the CFG weight. Each column uses one label, and each row uses one CFG weight. A weight of 8.0 gives wrong objects and strong artifacts.
+
+![CFG comparison](report/assets/abl-cfg_compare.png)
+
+The denoising process, from noise (left) to the final image (right).
+
+![Denoising process](report/assets/result-denoising_process.png)
+
+The full analysis is in [report/report.pdf](report/report.pdf).

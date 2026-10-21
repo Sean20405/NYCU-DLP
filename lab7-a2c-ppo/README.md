@@ -48,4 +48,18 @@ Average return of PPO on Walker2d-v5, tested with 20 random seeds per checkpoint
 |---|---|---|---|---|---|
 | 3292 | 3431 | 3325 | 3921 | 3825 | 4240 |
 
-Observation normalization matters most for Walker2d. Advantage normalization and the cosine learning rate schedule add further gains. `results/` holds the training curves of the clip range and entropy weight study as JSON files. The full analysis is in [report/report.pdf](report/report.pdf).
+Observation normalization matters most for Walker2d. Advantage normalization and the cosine learning rate schedule add further gains. `results/` holds the training curves of the clip range and entropy weight study as JSON files.
+
+Evaluation return of PPO on Walker2d-v5 over 3M steps, with observation normalization and a cosine learning rate schedule.
+
+![Walker2d return](report/assets/task3_curve.png)
+
+A2C and PPO on Pendulum-v1. PPO reaches a return near -200 within 30k steps, while A2C is slower and less stable.
+
+![A2C and PPO](report/assets/sample_efficiency.png)
+
+The effect of the clip range on Walker2d-v5. The default value 0.2 learns fastest, and the value 1.0 learns slowest.
+
+![Clip range](report/assets/param_study_clip.png)
+
+The full analysis is in [report/report.pdf](report/report.pdf).
