@@ -34,4 +34,26 @@ python src/Trainer.py \
 - Using 32 Monte Carlo samples instead of 1 gave a small PSNR gain.
 - PSNR still drops in the later frames, so long-horizon drift remains the main limit.
 
-`results/` holds the sweep summaries as CSV and Markdown, the KL schedule plot, and `gifs/` with three predicted sequences from the best run. The full analysis is in [report/report.pdf](report/report.pdf).
+`results/` holds the sweep summaries as CSV and Markdown, the KL schedule plot, and `gifs/` with two predicted sequences from the best run.
+
+## Visualization
+
+Predicted sequences from the best run. Each GIF shows the model input on the left (the first frame and the pose sequence) and the prediction on the right. The model sees the images at 64x32 pixels, so the prediction looks blocky. The pose is drawn at a higher resolution because the thin lines vanish at 64x32.
+
+Sequence 0:
+
+![Sequence 0](results/gifs/seq0_input_vs_pred.gif)
+
+Sequence 1:
+
+![Sequence 1](results/gifs/seq1_input_vs_pred.gif)
+
+Validation PSNR of each predicted frame. PSNR varies between about 37.5 and 41.5 dB.
+
+![PSNR per frame](report/assets/psnr_per_frame.png)
+
+Training loss, KL loss, and validation PSNR for monotonic, cyclical, and fixed KL weights. Monotonic and fixed weights reach a higher PSNR than the cyclical weight in this run.
+
+![KL comparison](report/assets/loss_curve_kl_compare.png)
+
+The full analysis is in [report/report.pdf](report/report.pdf).
