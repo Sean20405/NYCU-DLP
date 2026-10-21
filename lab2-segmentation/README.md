@@ -17,6 +17,8 @@ python src/train.py                              # UNet (default)
 python src/train.py --model_type=resnet_unet     # ResNet34-UNet
 python src/inference.py --ckpt_path <path to best.pth>
 python src/inference.py --ckpt_path <path to best.pth> --model_type resnet_unet
+python src/visualize.py --ckpt_path <path to best.pth> --model_type resnet_unet --out results/resnet_unet_samples.png
+python src/visualize.py --ckpt_path <path to best.pth> --tile_pred true --out results/unet_samples.png
 ```
 
 ## Method
@@ -28,6 +30,20 @@ python src/inference.py --ckpt_path <path to best.pth> --model_type resnet_unet
 - The original UNet has no padding, so the output mask is smaller than the input (388x388 from 572x572). Training uses a center-cropped ground truth. Inference uses reflection padding and tiling to get a full-size mask.
 
 ## Results
+
+### Qualitative Results
+
+ResNet34-UNet:
+
+![ResNet34-UNet samples](results/resnet_unet_samples.png)
+
+UNet:
+
+![UNet samples](results/unet_samples.png)
+
+`src/visualize.py` creates these figures and prints the average Dice score.
+
+### Quantitative Results
 
 Dice score on the Kaggle leaderboard. The values come from the names of my submission files.
 
@@ -43,5 +59,3 @@ Dice score on the Kaggle leaderboard. The values come from the names of my submi
 | ResNet34-UNet | + RandomResizedCrop, 150 epochs | 0.9252 |
 | ResNet34-UNet | 320 epochs | 0.9290 |
 | ResNet34-UNet | Corrected architecture | 0.9323 and 0.9341 (two runs) |
-
-`results/worst_cases/` holds the images with the lowest Dice scores. Each image shows the input photo followed by two mask images. The file name starts with the rank and ends with the Dice score.
