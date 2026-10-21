@@ -1,5 +1,7 @@
 # Lab 3: MaskGIT for Image Inpainting
 
+![MaskGIT inpainting before and after](report/assets/exp-vis.png)
+
 MaskGIT inpainting with a pre-trained VQGAN and a bidirectional transformer. Stage 1 is the VQGAN, which the course provides. Stage 2 trains the transformer to predict masked image tokens. Inpainting then fills the masked tokens in several iterative decoding steps. I implemented the multi-head attention of the transformer by hand, without calling `torch.nn.MultiheadAttention`.
 
 ## Setup
@@ -57,12 +59,6 @@ Two choices improved the FID score:
 
 - Sampling a token from the predicted distribution instead of `argmax`, as in the MaskGIT paper.
 - Gradient accumulation over 10 steps. The GPU limited the batch size to 16, so the effective batch size was 160.
-
-### Inpainting results
-
-Each pair of rows shows the masked input (before) and the inpainted image (after). The grey areas are the masked regions.
-
-![Inpainting results](report/assets/exp-vis.png)
 
 ### Iterative decoding
 

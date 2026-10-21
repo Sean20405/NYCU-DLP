@@ -1,5 +1,7 @@
 # Lab 5: Value-Based Reinforcement Learning
 
+![Pong evaluation score](report/assets/task3_curve.png)
+
 DQN on CartPole-v1 and on Pong (ALE/Pong-v5). The full agent for Pong adds Double DQN, Prioritized Experience Replay (PER), multi-step returns, a dueling network, and action reduction.
 
 | Task | Environment | Agent | Script |

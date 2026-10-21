@@ -1,5 +1,7 @@
 # Lab 6: Conditional Diffusion on iCLEVR
 
+![Generated iCLEVR images](report/assets/result-test_grid.png)
+
 A conditional DDPM that generates 64x64 images from multi-label object descriptions, such as "red cube" and "blue sphere". The U-Net uses cross-attention for the labels. Classifier-free guidance (CFG) strengthens the conditioning, and DDIM gives faster sampling.
 
 ## Setup
@@ -39,10 +41,6 @@ The best configuration uses cross-attention, CFG weight 3.0, the scaled-linear b
 - A high CFG weight with few sampling steps hurts accuracy. For example, CFG 8.0 with 50 DDIM steps reached 0.33.
 
 `results/eval_summary.md` lists every evaluation run. The test sets have only 32 images each and the sampling is random, so single runs differ by several points. Some runs score higher than the numbers above. The report uses the runs in the table above. `results/result.png` and `results/result_process.png` show generated images and the denoising process. ## Visualization
-
-Generated images for the 32 labels in `test.json`.
-
-![Generated images](report/assets/result-test_grid.png)
 
 The effect of the CFG weight. Each column uses one label, and each row uses one CFG weight. A weight of 8.0 gives wrong objects and strong artifacts.
 

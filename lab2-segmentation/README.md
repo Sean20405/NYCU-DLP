@@ -1,5 +1,7 @@
 # Lab 2: Binary Semantic Segmentation
 
+![ResNet34-UNet segmentation samples](results/resnet_unet_samples.png)
+
 Foreground and background segmentation on the Oxford-IIIT Pet dataset with a UNet and a ResNet34-UNet. I built both models myself from PyTorch layers, with no ready-made model class such as `torchvision.models` and no pretrained weights. The metric is the Dice score from the Kaggle leaderboard.
 
 ## Setup

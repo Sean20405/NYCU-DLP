@@ -1,5 +1,7 @@
 # Lab 4: Conditional VAE for Video Prediction
 
+![Input and predicted video](results/gifs/seq0_input_vs_pred.gif)
+
 A conditional VAE that predicts the next video frames. The model trains with teacher forcing and KL annealing. At test time it averages several latent samples (Monte Carlo averaging) to reduce variance.
 
 ## Setup
