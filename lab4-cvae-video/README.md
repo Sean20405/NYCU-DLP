@@ -34,6 +34,10 @@ python src/Trainer.py \
 - Using 32 Monte Carlo samples instead of 1 gave a small PSNR gain.
 - PSNR still drops in the later frames, so long-horizon drift remains the main limit.
 
+My Kaggle score is 38.61025, at rank 6 on the leaderboard.
+
+![Kaggle leaderboard](results/kaggle.png)
+
 `results/` holds the sweep summaries as CSV and Markdown, the KL schedule plot, and `gifs/` with two predicted sequences from the best run.
 
 ## Visualization
